@@ -1,0 +1,70 @@
+.header_container {
+  padding: 20px;
+}
+
+header {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.BurgerMenuContainer {
+  display: none;
+}
+
+/* main content */
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+nav {
+  height: 80px;
+  flex: 1 1 80px;
+}
+
+nav ul {
+  display: flex;
+  float: right;
+}
+
+nav ul li {
+  padding: 0;
+  border-bottom: 0;
+}
+
+nav ul li a {
+  margin: 0 15px;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.articles {
+  flex-wrap: nowrap;
+  font-size: 1.2rem;
+}
+
+.articles > div {
+  flex: 1 1 25%;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.articles > div :first-child {
+  margin-left: 0;
+}
+
+.articles > div :last-child {
+  margin-right: 0;
+}
+
+.articles {
+  font-size: 1rem;
+}
+@media only screen and (min-width: 680px) and (max-width: 1280px) {
+  header h1 {
+    color: red;
+  }
+}
