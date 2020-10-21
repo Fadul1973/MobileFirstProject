@@ -4,31 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML FORM</title>
+
+    <style>
+
+        label{
+            display: block;
+        }
+        
+        .radioButton > label{
+        display: inline;
+        margin-right: 20px;
+        }
+
+        form > div {
+            margin: 10px 0;
+        }
+
+        
+
+    </style>
 </head>
 <body>
     <H1>HTML FORM</H1>
     
     <form action="">
-    <div>
+        <fieldset>
+            <legend>Personal details</legend>
+    <div>                
         <label for="firstname">First Name</label>
         <input type="text" name="firstname" 
         id="firstname" 
         placeholder="Enter firstname" 
         required
         >
+    
     </div>
      <div>
-         <label for="email">Email Address
+         <label for="email">Email Address</label>
          <input type="email" name="email" 
-         id="email" required
-         >
-        </label>
+         id="email" placeholder="Enter email"
+          required
+         >              
      </div>
      <div>
-         <input type="submit" 
-         value="Send details" 
-         placeholder="Enter email">
+         <label for="dob">Date of birth</label>
+         <input type="date" name="dob" id="dob">
      </div>
+        </fieldset>
+        <fieldset>
+            <legend>Comments</legend>
+    
+      <div>
+          <label for="comments">Comments</label>
+              <textarea name="comments" 
+              id="comments" cols="30" rows="10">
+              </textarea>
+          
+      </div>
+      </fieldset>
+      <fieldset>
+        <legend>Other details</legend>
+      <div>
+        <label for="marketing">How did you hered about us</label>
+            <select name="marketing" id="marketing">
+                <option value="web">Web Search</option>
+                <option value="friend" >Recommendation from friend</option>
+                <option value="newspaaer">News paper advert</option>
+                <option value="bus">Bus addvert</option>
+            </select>        
+      </div>
+      <div class="radioButton">
+          <label>Male
+          <input type="radio" name="gender" value="m">
+        </label>
+        <label>Female
+          <input type="radio" name="gender" value="f">
+        </label>
+        <label>N/A
+          <input type="radio" name="gender" value="n/a">
+        </label>
+      </div>
+      <div>
+          <label for="newsletter">SignUp for newletter</label>
+          <input type="checkbox" name="newsletter" id="newsletter" value="1" checked>
+      </div>
+      <legend>
+      <div>
+        <input type="submit" value="Send details" 
+        >
+    </div>
 
     </form>
 </body>
